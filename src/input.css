@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #151937;
+}
+
+.btn_gradient {
+  @apply text-white py-3 px-6 rounded-3xl bg-color-gradient;
+}
+
+.text-gradient {
+  @apply bg-color-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text_content {
+  @apply text-white text-opacity-65;
+}
+
+.feedback .slick-dots {
+    bottom: -40px;
+}
+
+.feedback .slick-dots li button:before {
+  font-size: 16px;
+  color: white;
+  opacity: 1;
+}
+
+.feedback .slick-dots li.slick-active button:before {
+    color: #ff5ea3;
+}
+
+footer .footer_input {
+  background: unset;
+  border: none;
+  outline: none;
+}
+
+footer .footer_title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+footer li {
+  margin: 8px 0;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+footer li:hover a {
+  color: white;
+  text-decoration: underline;
+}
